@@ -1,0 +1,93 @@
+$button-min-width: 100px;
+$button-height: 80px;
+$calc-width: $button-min-width * 4;
+$display-height: $button-height * 1.5;
+$btn-background: #f0f0f0;
+
+body{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#calc-container{
+    display: flex;
+    border: 1px solid black;
+    width: $calc-width;
+    flex-wrap: wrap;
+}
+
+#btns-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn{
+    min-width: $button-min-width;
+    height: $button-height;
+    border: 1px solid black;
+    font-size: 1rem;
+    cursor:pointer;
+    background-color: $btn-background;
+    &:hover{
+        background: darken($btn-background,5%);
+    }
+    &:active{
+        // background: darken($btn-background,10%);
+    }
+}
+
+.larger{
+    font-size: 1.5rem;
+}
+
+@mixin btn-background-img{
+    background-size: calc($button-min-width / 2.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+}
+
+#btn-delete{
+    @include btn-background-img;
+    background-image: url('../images/delete_button.png');   
+}
+
+#btn-divide{
+    @include btn-background-img;
+    background-image: url('../images/divide.png');   
+}
+
+#btn-1-divide-x{
+    @include btn-background-img;
+    background-image: url('../images/1_divide_x.png');   
+}
+
+#btn-squared{
+    @include btn-background-img;
+    background-image: url('../images/x_squared.png');   
+}
+
+#btn-square-root{
+    @include btn-background-img;
+    background-image: url('../images/square_root.png');   
+}
+
+#display{
+    width: 400px;
+    height: 120px;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    #operation{
+        font-size: 2rem;
+    }
+    #current{
+        font-size: 4rem;
+    }
+}
+
