@@ -31,10 +31,10 @@ body{
     cursor:pointer;
     background-color: $btn-background;
     &:hover{
-        background: darken($btn-background,5%);
+        background-color: darken($btn-background,5%);
     }
     &:active{
-        // background: darken($btn-background,10%);
+        background-color: darken($btn-background,10%);
     }
 }
 
@@ -42,36 +42,38 @@ body{
     font-size: 1.5rem;
 }
 
-@mixin btn-background-img{
+.img-background{
     background-size: calc($button-min-width / 2.5);
     background-repeat: no-repeat;
     background-position: center;
     font-size: 0;
 }
-
 #btn-delete{
-    @include btn-background-img;
     background-image: url('../images/delete_button.png');   
 }
 
 #btn-divide{
-    @include btn-background-img;
     background-image: url('../images/divide.png');   
 }
 
 #btn-1-divide-x{
-    @include btn-background-img;
     background-image: url('../images/1_divide_x.png');   
 }
 
 #btn-squared{
-    @include btn-background-img;
     background-image: url('../images/x_squared.png');   
 }
 
 #btn-square-root{
-    @include btn-background-img;
     background-image: url('../images/square_root.png');   
+}
+
+#btn-square-root{
+    background-image: url('../images/square_root.png');   
+}
+
+#btn-multiply{
+    background-image: url('../images/multiplication.png')
 }
 
 #display{

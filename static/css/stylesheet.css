@@ -27,50 +27,49 @@ body {
   background-color: #f0f0f0;
 }
 .btn:hover {
-  background: #e3e3e3;
+  background-color: #e3e3e3;
 }
+.btn:active {
+  background-color: #d7d7d7;
+}
+
 .larger {
   font-size: 1.5rem;
 }
 
-#btn-delete {
+.img-background {
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
   font-size: 0;
+}
+
+#btn-delete {
   background-image: url("../images/delete_button.png");
 }
 
 #btn-divide {
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 0;
   background-image: url("../images/divide.png");
 }
 
 #btn-1-divide-x {
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 0;
   background-image: url("../images/1_divide_x.png");
 }
 
 #btn-squared {
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 0;
   background-image: url("../images/x_squared.png");
 }
 
 #btn-square-root {
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 0;
   background-image: url("../images/square_root.png");
+}
+
+#btn-square-root {
+  background-image: url("../images/square_root.png");
+}
+
+#btn-multiply {
+  background-image: url("../images/multiplication.png");
 }
 
 #display {
